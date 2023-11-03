@@ -1,0 +1,29 @@
+.header {
+    background-color: #FFF;
+    color: black
+}
+
+.header__menu {
+    width: 1110px;
+    height: 34px;
+    margin: auto;
+    flex-shrink: 0;
+    margin: 24px 165px 38px 165px;
+}
+
+.header__title {
+ font-family: Inter;
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: 64px;
+margin: 38px 610px 40px 160px; 
+}
+
+.header__nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 806px 0px 165px;
+
+}
