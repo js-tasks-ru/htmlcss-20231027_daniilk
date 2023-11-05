@@ -1,17 +1,9 @@
 /* Стилизация кнопки */
-@import url('../../assets/css/main.css');;
 
-.buttons {
-  max-width: 1110px;
-  margin: auto;
-  padding: 20px; /* чтобы удобно было смотреть на экране */
-  
+body {
+  padding: 30px;
 }
-
 .button {
-  width: 182px;
-  height: 48px;
-  flex-shrink: 0;
   border-radius: 8px;
   text-align: center;
   font-family: Roboto;
@@ -19,45 +11,41 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin: 32px 20px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-
-.button:hover{
-    cursor: pointer;
+.button:hover {
+  cursor: pointer;
 }
 
 .button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .button_primary {
-    background-color: var(--blue);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-    color: var(--white);
+  background-color: var(--blue);
+
+  color: var(--white);
+  padding: 15px 62px;
 }
 
-.button_primary:hover{
-    background-color: var(--primary-hover);
+.button_primary:hover {
+  background-color: var(--primary-hover);
 }
 
 .button_secondary {
-    background-color: var(--purple);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-    color: var(--white)
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 15px 53px;
 }
 .button_secondary:hover {
-    background-color: var(--secondary-hover);
+  background-color: var(--secondary-hover);
 }
 
-
-.button_alternativ{
-    background-color: var(--grey-1);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+.button_alternativ {
+  padding: 15px 58px;
+  background-color: var(--grey-1);
 }
-.button_alternativ:hover{
-    
+.button_alternativ:hover {
 }
-
-
