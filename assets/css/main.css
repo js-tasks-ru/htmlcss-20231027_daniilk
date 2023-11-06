@@ -3,6 +3,9 @@
 @import url(../../components/body/body.css);
 @import url(../../components/header/header.css);
 @import url(../../components/footer/footer.css);
+@import url(../../components/cards/cards.css);
+@import url(../../components/card/card.css);
+@import url(../../components/container/container__body.css);
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -26,7 +29,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body,html {
+    height: 100%;
+}
+
 .container {
-    width: 1440px;
+    
+    max-width: 1110px;
     margin: auto;
 }

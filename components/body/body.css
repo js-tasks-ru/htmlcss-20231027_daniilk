@@ -1,5 +1,7 @@
 .body {
-    height: 1035px;
+    /* height: 1035px; */
     background-color:  #F9FAFC;
     color: #F9FAFC;
+    flex-grow: 1;
+    padding: 68px;
 }
