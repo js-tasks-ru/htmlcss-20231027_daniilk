@@ -1,11 +1,10 @@
 /* Стилизация кнопки */
 
-body {
-  padding: 30px;
-}
 .button {
   border-radius: 8px;
   text-align: center;
+  padding: 15px;
+  max-height: 48px;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -27,7 +26,6 @@ body {
   background-color: var(--blue);
 
   color: var(--white);
-  padding: 15px 62px;
 }
 
 .button_primary:hover {
@@ -37,15 +35,16 @@ body {
 .button_secondary {
   background-color: var(--purple);
   color: var(--white);
-  padding: 15px 53px;
 }
 .button_secondary:hover {
   background-color: var(--secondary-hover);
 }
 
 .button_alternativ {
-  padding: 15px 58px;
+  border: 1px solid var(--grey-3);
   background-color: var(--grey-1);
+  color: var(--Gray-4, #495057);
 }
 .button_alternativ:hover {
+  border-color: var(--black);
 }
