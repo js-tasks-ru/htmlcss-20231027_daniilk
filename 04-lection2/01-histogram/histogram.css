@@ -1,0 +1,101 @@
+@import './const.css';
+
+.histogram {
+    max-width: 650px;
+  margin: 20px;
+  width: 354px;
+  height: 185px;
+  padding: 16px 24px;
+  background-color: var(--white);
+  display: flex;
+  flex-shrink: 1 ;
+  flex-direction: column;
+  justify-content: var(--sb);
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.histogram__info {
+  display: var(--df);
+  font-style: var(--norm);
+  justify-content: var(--sb);
+  font-family: var(--fm);
+  font-weight: 400;
+  flex-shrink: 1 ;
+}
+.mt6 {
+  margin-top: 6px;
+}
+
+.orders {
+  color: var(--black);
+}
+
+.orders__text {
+  font-size: var(--fz16);
+  font-family: var(--fm);
+  line-height: 150%;
+  
+}
+
+.orders__number {
+  font-size: var(--fz20);
+  line-height: 130%;
+  font-family: var(--fm);
+}
+
+.info__nav {
+  font-size: var(--fz16);
+  line-height: 150%;
+  color: var(--blue);
+}
+
+.nav__link {
+  font-family: var(--fm);
+  font-size: var(--fz16);
+  font-style: var(--norm);
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.histogram__chart {
+  padding: 8px 2px;
+  flex-basis: 90px;
+  display: var(--df);
+  align-items: flex-end;
+  justify-content:var(--sb);
+  gap: 1px;
+  flex-shrink: 1;
+}
+
+.chart__elem {
+  flex-basis: 3%;
+  height: 25%;
+  background-color: var(--blue);
+  &:nth-child(1n) {
+    height: 15%;
+  }
+  &:nth-child(2n) {
+    height: 25%;
+  }
+  &:nth-child(3n) {
+    height: 50%;
+  }
+  &:nth-child(4n) {
+    height: 70%;
+  }
+  &:nth-child(5n) {
+    height: 100%;
+  }
+  &:nth-child(10n) {
+    height: 5%;
+  }
+  &:last-child {
+    height: 55%;
+  }
+  &:first-child {
+    height: 13%;
+  }
+  
+}
