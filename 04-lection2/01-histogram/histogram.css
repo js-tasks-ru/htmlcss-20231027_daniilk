@@ -1,11 +1,8 @@
 @import './const.css';
 
 .histogram {
-    max-width: 650px;
-  margin: 20px;
-  width: 354px;
-  height: 185px;
-  padding: 16px 24px;
+  width: 400px;
+  padding: 16px 24px 24px 24px;
   background-color: var(--white);
   display: flex;
   flex-shrink: 1 ;
@@ -23,34 +20,34 @@
   font-weight: 400;
   flex-shrink: 1 ;
 }
-.mt6 {
+.histogram__info__orders__number-mt6 {
   margin-top: 6px;
 }
 
-.orders {
+.histogram__info__orders {
   color: var(--black);
 }
 
-.orders__text {
+.histogram__info__orders__text {
   font-size: var(--fz16);
   font-family: var(--fm);
   line-height: 150%;
   
 }
 
-.orders__number {
+.histogram__info__orders__number {
   font-size: var(--fz20);
   line-height: 130%;
   font-family: var(--fm);
 }
 
-.info__nav {
+.histogram__info__nav {
   font-size: var(--fz16);
   line-height: 150%;
   color: var(--blue);
 }
 
-.nav__link {
+.histogram__info__nav__link {
   font-family: var(--fm);
   font-size: var(--fz16);
   font-style: var(--norm);
@@ -60,8 +57,8 @@
 }
 
 .histogram__chart {
-  padding: 8px 2px;
-  flex-basis: 90px;
+  margin-top: 30px; /* или здесь 39? */
+  flex-basis: 90px; /* Что здесь тогда делать, черещ max-height? */
   display: var(--df);
   align-items: flex-end;
   justify-content:var(--sb);
@@ -69,14 +66,14 @@
   flex-shrink: 1;
 }
 
-.chart__elem {
-  flex-basis: 3%;
-  height: 25%;
+.histogram__chart__elem {
+  flex-basis: 3%; /* как избавиться не пойму */
+  /* height: 25%; */
   background-color: var(--blue);
-  &:nth-child(1n) {
+  /* &:nth-child(1n) {
     height: 15%;
-  }
-  &:nth-child(2n) {
+  } */
+  /* &:nth-child(2n) {
     height: 25%;
   }
   &:nth-child(3n) {
@@ -96,6 +93,16 @@
   }
   &:first-child {
     height: 13%;
-  }
+  } */
   
+}
+
+.histogram__chart__elem-type-1 {
+  height: 100%
+}
+.histogram__chart__elem-type-2 {
+  height: 55%
+}
+.histogram__chart__elem-type-3 {
+  height: 41%
 }
