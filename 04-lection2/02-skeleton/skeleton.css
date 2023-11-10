@@ -3,7 +3,7 @@
 
 .skeleton {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 32px 40px 32px 24px;
     /* height: var(--testH); */
     /* width: var(--testW); */
     border: 1px solid var(--grey-3);
@@ -15,7 +15,7 @@
     gap: 24px;
 }
 
-.info__block {
+.skeleton__line {
     height: 20px;
     /* width: 100%; */
     background-color:var(--grey-2);
@@ -27,7 +27,7 @@
     display: flex;
     gap: 16px
 }
-.people__info {
+.skeleton__people-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,19 +35,19 @@
     gap: 8px;
 }
 
-.people__avatar {
+.skeleton__people-avatar {
     width: 64px;
     height: 64px;
     border-radius:50% ;
     background-color: var(--grey-2);
 }
 
-.info__name{
-    width:30%
+.skeleton__pinfo-name{
+    width:45%
 }
 
-.info__lastname {
-    width: 50%;
+.skeleton__pinfo-lastname {
+    width: 70%;
 }
 
 .skeleton__info {
@@ -57,10 +57,10 @@
     gap: 8px;
 }
 
-.info__one{
-    width: 96%;
+.skeleton__info-one{
+    width: 100%;
 }
 
-.info__two{
-    width: 90%;
+.skeleton__info-two{
+    width: 96%;
 }
