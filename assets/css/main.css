@@ -27,4 +27,6 @@
     max-width: 1110px;
     margin: auto;
     padding: 10px;
+    /* position: relative; */
+    padding: 100px;
 }
