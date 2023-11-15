@@ -28,3 +28,12 @@
     margin: auto;
     padding: 10px;
 }
+
+.modal{
+    --color-back-modal:#C4C4C4;
+    --color-back-modal-window:#FFF;
+    --color-placeholder:var(--grey-2);
+    --color-modal-title: var(--grey-3);
+    --color-modal-btn: #4263EB
+
+}

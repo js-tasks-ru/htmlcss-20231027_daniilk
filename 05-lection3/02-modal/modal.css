@@ -1,0 +1,64 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  /* transform: translateY(-50%); */
+  background-color: var(--color-back-modal);
+}
+.modal__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-back-modal-window);
+  padding: 32px 38px 40px 40px;
+  border-radius: 8px;
+  /* width: 400px; */
+}
+
+.modal__data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+.modal__input-email {
+  margin-bottom: 24px;
+}
+
+.modal__lebel {
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: var(--color-modal-title);
+}
+
+.modal__input {
+  border: 1px solid var(--color-placeholder);
+  border-radius: 8px;
+  padding: 17px 24px 13px 24px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+}
+.modal__input::placeholder {
+  color: var(--color-placeholder);
+}
+.modal__submit {
+  border: 1px solid var(--color-modal-btn);
+  border-radius: 8px;
+  background-color: var(--color-modal-btn);
+  color: var(--white);
+  padding: 15px 65px 14px 66px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400; /* в макете 500, но внешне в браузере больше похоже на 400*/
+  line-height: normal;
+}
