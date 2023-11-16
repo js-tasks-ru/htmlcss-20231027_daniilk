@@ -23,8 +23,19 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+body, html {
+    height: 100%;
+    background-color: #F9FAFC;
+}
 .container {
     max-width: 1110px;
+    height: 100%;
     margin: auto;
-    padding: 10px;
+    /* если дочерний 100% будет вылезать из-за нних */
+    /* padding: 10px;  */
+}
+
+.wrapper-page {
+    --back-color: #F9FAFC;
+    --menu-color-title: #000;
 }
