@@ -58,16 +58,21 @@
 
 .histogram__chart {
   margin-top: 30px; /* или здесь 39? */
-  flex-basis: 90px; /* Что здесь тогда делать, черещ max-height? */
+  height: 50px; /* Что здесь тогда делать, черещ max-height? */
   display: var(--df);
   align-items: flex-end;
   justify-content:var(--sb);
   gap: 1px;
   flex-shrink: 1;
+
 }
 
 .histogram__chart__elem {
-  flex-basis: 3%; /* как избавиться не пойму */
+  /* как избавиться не пойму */
+  /* flex-basis: 3%;  */
+
+  /* появляется слипание*/
+  flex-grow: 1;
   /* height: 25%; */
   background-color: var(--blue);
   /* &:nth-child(1n) {
