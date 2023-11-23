@@ -33,7 +33,7 @@
   grid-template-columns: repeat(7,1fr);
   grid-template-rows: repeat(7,1fr);
   grid-auto-flow: rows;
-  counter-reset: section;
+  /* counter-reset: section; */
 }
 
 .calender__item-day{
@@ -47,40 +47,44 @@
 }
 
 
-.calender__item:nth-child(n+12):nth-child(-n+42)::before{
+/* .calender__item:nth-child(n+12):nth-child(-n+42)::before{
 
   display: flex;
   counter-increment: section;
   content: counter(section);
-}
+} */
 
 .calender__item{
   display: flex;
   justify-content: center;
   justify-items:center ;
   align-items: center;
-
 }
 
 /* .calender__item-day::after {
   content: '';
 } */
 
-.calender__item:nth-child(n+30):nth-child(-n+33) {
+/* .calender__item:nth-child(n+30):nth-child(-n+33) {
   background-color: var(--color-back-i);
-}
+} */
 
 /* выделение можно делать через псевдо классы или через модификаторы? */
 
-.calender__item:nth-child(29),
+/* .calender__item:nth-child(29),
 .calender__item:nth-child(34) {
   background-color: var(--color-back-b);
-}
+} */
 
-.calender__item-blue {
+.calender__item_range {
   background-color: var(--color-back-b)
 }
 
-.calender__item-white-blue {
+.calender__item_range-adge {
   background-color: var(--color-back-i);
 }
+
+/* .calender__item_1::before {
+  content: "1";
+  display: flex;
+} */
