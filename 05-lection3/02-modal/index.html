@@ -6,19 +6,22 @@
         <link rel="stylesheet" href="./modal.css">
         <title>Modal</title>
     </head>
+    
     <body>
-        <div class="modal">
+        <button id="modal-open" >Open</button>
+        <div class="modal" id="modal">
             <div class="modal__window">
+                <button class="modal__button modal__button_close" id="modal-close">X</button>
                 <div class="modal__name modal__data">
-                    <label for="name" class="modal__lebel">NAME</label>
-                    <input type="text" name="login" id="name" placeholder="Placeholder" class="modal__input modal__input-pass">
+                    <p class="modal__lebel">NAME</p>
+                    
                 </div>
                 <div class="modal__email modal__data">
-                    <label for="email" class="modal__lebel">EMAIL</label>
-                    <input type="email" name="email" id="email" placeholder="Placeholder" class="modal__input modal__input-email" >
+                    <p  class="modal__lebel">EMAIL</p>
+                    
                 </div>
                 <div class="modal__btn">
-                    <input type="submit" value="Submit" class="modal__submit">
+                    <button  class="modal__button modal__button_submit"> Submit</button>
                 </div>
             </div>
         </div>
