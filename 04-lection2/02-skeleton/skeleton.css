@@ -42,11 +42,11 @@
     background-color: var(--grey-2);
 }
 
-.skeleton__pinfo-name{
+.skeleton__line_small{
     width:45%
 }
 
-.skeleton__pinfo-lastname {
+.skeleton__line_medium{
     width: 70%;
 }
 
@@ -57,10 +57,8 @@
     gap: 8px;
 }
 
-.skeleton__info-one{
-    width: 100%;
-}
 
-.skeleton__info-two{
+
+.skeleton__line_large{
     width: 96%;
 }
