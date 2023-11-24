@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  
 }
 
 .menu__title {
@@ -56,4 +55,43 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 157.143% */
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .header__open-menu {
+   display: block;
+  }
+
+  .container-main {
+    display: block;
+    max-width: 700px;
+    height: 100%;
+  
+  }
+
+  .components {
+    height: 90%;
+   }
+
+   .open-menu:checked ~ .menu {
+    display: grid;
+    background-color: var(--white);
+    width: 100%;
+    /* text-align: center; */
+    
+   }
+
+   .open-menu:checked ~ .components {
+    display: none;
+   }
+
+   .menu__title {
+    color: var(--grey-3);
+   }
+   .menu__block {
+    border-top: 1px solid  var(--grey-3);
+   }
 }

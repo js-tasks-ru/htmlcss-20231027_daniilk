@@ -1,5 +1,10 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
+@import "../../components/template/template.css";
+@import "../../components/template/header/header.css";
+@import "../../components/template/main/main.css" ;
+@import "../../components/template/footer/footer.css" ;
+
 
 :root {
     --white: #ffffff;
@@ -39,3 +44,25 @@ body, html {
     --back-color: #F9FAFC;
     --menu-color-title: #000;
 }
+
+@media screen and (max-width:900px) {
+    .container {
+        max-width: 700px;
+    }
+   
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        max-width: 500px;
+    }
+   
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        max-width: 350px;
+    }
+   
+}
+
