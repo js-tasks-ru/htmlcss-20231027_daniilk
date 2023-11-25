@@ -1,11 +1,17 @@
 @import '../fonts/fonts.css';
-@import url(normalize.css);
-@import url(../../components/body/body.css);
-@import url(../../components/header/header.css);
-@import url(../../components/footer/footer.css);
-@import url(../../components/cards/cards.css);
-@import url(../../components/card/card.css);
-@import url(../../components/container/container__body.css);
+
+@import 'normalize.css';
+@import '../../components/body/body.css';
+@import '../../components/header/header.css';
+@import '../../components/footer/footer.css';
+@import '../../components/cards/cards.css)';
+@import '../../components/card/card.css';
+@import '../../components/container/container__body.css';
+
+
+@import '../../03-lection1/02-accordion/accordion.css';
+
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -29,14 +35,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 body,html {
     height: 100%;
 }
 
-.container {
-    max-width: 1110px;
-    margin: auto;
-}
+
 
 @media screen  and (max-width: 1200px) {
     .container {
@@ -59,3 +63,16 @@ body,html {
         margin: auto;
     }
 }
+
+.accordion {
+    max-width: 1110px;
+    margin: auto;
+   
+  }
+
+  .container {
+    max-width: 1110px;
+    margin: auto;
+    padding: 0 10px;
+}
+
