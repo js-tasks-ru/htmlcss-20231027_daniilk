@@ -1,0 +1,11 @@
+.image__block{
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid red; */
+}
+
+.image__elemnt {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
