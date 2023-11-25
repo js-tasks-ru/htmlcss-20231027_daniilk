@@ -1,6 +1,10 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
+
+@import '../../03-lection1/02-accordion/accordion.css';
+
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -25,12 +29,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    max-width: 1110px;
-   
-    margin: auto;
-    background-color: var(--grey-3);
-}
+
+
 body {
     background-color: var(--grey-3);
 }
@@ -38,3 +38,17 @@ body {
 p{
     margin: 0;
 }
+
+.accordion {
+    max-width: 1110px;
+    margin: auto;
+   
+  }
+
+  .container {
+    max-width: 1110px;
+    margin: auto;
+    padding: 0 10px;
+    background-color: var(--grey-3);
+}
+
