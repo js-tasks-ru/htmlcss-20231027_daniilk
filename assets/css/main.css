@@ -1,10 +1,10 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
+
 @import "../../components/template/template.css";
 @import "../../components/template/header/header.css";
 @import "../../components/template/main/main.css" ;
 @import "../../components/template/footer/footer.css" ;
-
 
 
 @import '../../03-lection1/02-accordion/accordion.css';
@@ -32,6 +32,7 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 
 body, html {
     height: 100%;
@@ -74,11 +75,11 @@ body, html {
 }
 
 
+
 .accordion {
     max-width: 1110px;
     margin: auto;
    
   }
-
 
 
