@@ -31,8 +31,10 @@
 
 
 
+
+
 body {
-    background-color: var(--grey-3);
+   
 }
 
 p{
@@ -45,10 +47,12 @@ p{
    
   }
 
+
   .container {
     max-width: 1110px;
     margin: auto;
     padding: 0 10px;
     background-color: var(--grey-3);
 }
+
 
