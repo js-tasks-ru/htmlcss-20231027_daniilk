@@ -1,7 +1,7 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
-=======
+
 @import '../../03-lection1/02-accordion/accordion.css';
 
 
@@ -36,7 +36,7 @@
 
    
 }
-=======
+
 
 .accordion {
     max-width: 1110px;
