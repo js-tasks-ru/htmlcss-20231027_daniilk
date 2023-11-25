@@ -6,6 +6,10 @@
 @import "../../components/template/footer/footer.css" ;
 
 
+
+@import '../../03-lection1/02-accordion/accordion.css';
+
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -28,6 +32,7 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 body, html {
     height: 100%;
     background-color: #F9FAFC;
@@ -36,6 +41,7 @@ body, html {
     max-width: 1110px;
     height: 100%;
     margin: auto;
+    padding: 0 10px
     /* если дочерний 100% будет вылезать из-за нних */
     /* padding: 10px;  */
 }
@@ -44,6 +50,7 @@ body, html {
     --back-color: #F9FAFC;
     --menu-color-title: #000;
 }
+
 
 @media screen and (max-width:900px) {
     .container {
@@ -65,4 +72,13 @@ body, html {
     }
    
 }
+
+
+.accordion {
+    max-width: 1110px;
+    margin: auto;
+   
+  }
+
+
 
