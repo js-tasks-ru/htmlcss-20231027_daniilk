@@ -1,7 +1,7 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
-=======
+
 @import '../../03-lection1/02-accordion/accordion.css';
 
 :root {
@@ -41,7 +41,7 @@
     --color-modal-btn: #4263EB
 
 }
-=======
+
 
 .accordion {
     max-width: 1110px;
