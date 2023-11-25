@@ -2,7 +2,9 @@
 @import 'normalize.css';
 
 
+
 @import '../../03-lection1/02-accordion/accordion.css';
+
 
 
 :root {
@@ -28,6 +30,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .container {
     max-width: 1110px;
     margin: auto;
@@ -41,10 +44,10 @@
     --color-back-i:#A0B1F5;
 }
 
+
 .accordion {
     max-width: 1110px;
     margin: auto;
    
   }
-
 
