@@ -1,6 +1,13 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
+
 @import '../../03-lection1/02-accordion/accordion.css';
+
+
+
+@import '../../03-lection1/02-accordion/accordion.css';
+
+
 
 :root {
     --white: #ffffff;
@@ -25,13 +32,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .accordion {
     max-width: 1110px;
     margin: auto;
    
   }
 
-  .container {
+
+
+.container {
     max-width: 1110px;
     margin: auto;
     padding: 0 10px;
@@ -41,4 +51,5 @@
     --testH: 192px;
     --testW: 580px;
 }
+
 
