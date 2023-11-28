@@ -2,6 +2,9 @@
 @import 'normalize.css';
 
 
+@import '../../03-lection1/01-button/button.css';
+
+
 @import '../../03-lection1/02-accordion/accordion.css';
 
 
@@ -16,12 +19,21 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --primary-hover: #2342C0;
+    --secondary-hover:#5028C6;
 
     --error: var(--red);
     --success: var(--blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --df: flex;
+    --fz20: 20px;
+    --fz16: 16px;
+    --fm:  Inter;
+   --norm: normal;
+   --sb: space-between;
     
 }
 
@@ -46,6 +58,10 @@ p{
     margin: auto;
    
   }
+
+  .histogram {
+    --testWidth: 400px;
+}
 
 
   .container {

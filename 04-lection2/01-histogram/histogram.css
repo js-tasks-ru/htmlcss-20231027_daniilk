@@ -1,7 +1,6 @@
-@import './const.css';
+
 
 .histogram {
-  width: 400px;
   padding: 16px 24px 24px 24px;
   background-color: var(--white);
   display: flex;
@@ -18,36 +17,36 @@
   justify-content: var(--sb);
   font-family: var(--fm);
   font-weight: 400;
-  flex-shrink: 1 ;
+  
 }
-.histogram__info__orders__number-mt6 {
+.histogram__info-number_mt6 {
   margin-top: 6px;
 }
 
-.histogram__info__orders {
+.histogram__info-orders {
   color: var(--black);
 }
 
-.histogram__info__orders__text {
+.histogram__info-text {
   font-size: var(--fz16);
   font-family: var(--fm);
   line-height: 150%;
   
 }
 
-.histogram__info__orders__number {
+.histogram__info-number {
   font-size: var(--fz20);
   line-height: 130%;
   font-family: var(--fm);
 }
 
-.histogram__info__nav {
+.histogram__info-nav {
   font-size: var(--fz16);
   line-height: 150%;
   color: var(--blue);
 }
 
-.histogram__info__nav__link {
+.histogram__info-link {
   font-family: var(--fm);
   font-size: var(--fz16);
   font-style: var(--norm);
@@ -67,7 +66,7 @@
 
 }
 
-.histogram__chart__elem {
+.histogram__chart-elem {
   /* как избавиться не пойму */
   /* flex-basis: 3%;  */
 
@@ -102,12 +101,12 @@
   
 }
 
-.histogram__chart__elem-type-1 {
-  height: 100%
+.histogram__chart-elem_large {
+  height: 100%;
 }
-.histogram__chart__elem-type-2 {
-  height: 55%
+.histogram__chart-elem-medium {
+  height: 55%;
 }
-.histogram__chart__elem-type-3 {
-  height: 41%
+.histogram__chart-elem_normal {
+  height: 41%;
 }
