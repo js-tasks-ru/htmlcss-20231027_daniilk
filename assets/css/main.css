@@ -1,7 +1,15 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
+
+@import "../../components/template/template.css";
+@import "../../components/template/header/header.css";
+@import "../../components/template/main/main.css" ;
+@import "../../components/template/footer/footer.css" ;
+
+
 @import '../../03-lection1/01-button/button.css';
+
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -31,14 +39,53 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+body, html {
+    height: 100%;
+    background-color: #F9FAFC;
+}
+.container {
+    max-width: 1110px;
+    height: 100%;
+    margin: auto;
+    padding: 0 10px
+    /* если дочерний 100% будет вылезать из-за нних */
+    /* padding: 10px;  */
+}
+
+.wrapper-page {
+    --back-color: #F9FAFC;
+    --menu-color-title: #000;
+}
+
+
+@media screen and (max-width:900px) {
+    .container {
+        max-width: 700px;
+    }
+   
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        max-width: 500px;
+    }
+   
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        max-width: 350px;
+    }
+   
+}
+
+
+
 .accordion {
     max-width: 1110px;
     margin: auto;
+
    
   }
 
-  .container {
-    max-width: 1110px;
-    margin: auto;
-    padding: 0 10px;
-}

@@ -1,0 +1,18 @@
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 0;
+}
+
+.footer__title {
+  margin: 0;
+  color: var(--Gray-3, #acb5bd);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}

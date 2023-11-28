@@ -1,0 +1,97 @@
+.container-main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 56px;
+}
+
+.menu {
+  /* height: 90%; */
+  width: 223px;
+  /* width: auto; */
+}
+
+.components {
+  /* border: 1px solid green; */
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 32px 100px 64px 42px; /* там так понимаю компоненты делятся на 2 блока и там уже сови паддинги */
+}
+
+.menu {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 32px;
+  height: 80%;
+}
+
+.menu__block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu__title {
+  margin: 0;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600; /*если как в макете 400, то не будет жирниым */
+  line-height: 26px; /* 130% */
+  color: var(--menu-color-title);
+}
+
+.menu__elements {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-row-gap: 4px;
+}
+
+.menu__element {
+  color: var(--Black, #212429);
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .header__open-menu {
+   display: block;
+  }
+
+  .container-main {
+    display: block;
+    max-width: 700px;
+    height: 100%;
+  
+  }
+
+  .components {
+    height: 90%;
+   }
+
+   .open-menu:checked ~ .menu {
+    display: grid;
+    background-color: var(--white);
+    width: 100%;
+    /* text-align: center; */
+    
+   }
+
+   .open-menu:checked ~ .components {
+    display: none;
+   }
+
+   .menu__title {
+    color: var(--grey-3);
+   }
+   .menu__block {
+    border-top: 1px solid  var(--grey-3);
+   }
+}
