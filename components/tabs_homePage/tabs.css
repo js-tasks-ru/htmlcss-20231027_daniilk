@@ -1,0 +1,120 @@
+.tabs {
+  position: absolute;
+  top: -38px;
+}
+
+.tabs__input {
+  display: none;
+}
+
+.tabs__scroller {
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__scroller {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.tabs__scroller-component {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  color: var(--grey-3);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  cursor: pointer;
+}
+
+.tabs__line {
+  width: 100%;
+  height: 5px;
+  background-color: var(--black);
+  display: none;
+}
+
+#all-tab:checked ~ .tabs__content_all {
+  display: block;
+}
+
+
+
+#elements-tab:checked ~ .tabs__content_elements {
+  display: block;
+}
+
+#containers-tab:checked ~ .tabs__content_containers {
+  display: block;
+}
+
+#templates-tab:checked ~ .tabs__content_templates {
+  display: block;
+}
+#all-tab:checked ~ .tabs__scroller .tabs__scroller-component_all .tabs__line {
+  display: block;
+}
+#elements-tab:checked ~ .tabs__scroller .tabs__scroller-component_elements .tabs__line {
+  display: block;
+}
+#containers-tab:checked ~ .tabs__scroller .tabs__scroller-component_containers .tabs__line {
+  display: block;
+}
+#templates-tab:checked ~ .tabs__scroller .tabs__scroller-component_templates .tabs__line {
+  display: block;
+}
+
+#all-tab:checked ~ .tabs__scroller .tabs__scroller-component_all  {
+  color: var(--black);
+}
+#elements-tab:checked ~ .tabs__scroller .tabs__scroller-component_elements {
+  color: var(--black);
+}
+#containers-tab:checked ~ .tabs__scroller .tabs__scroller-component_containers  {
+  color: var(--black);
+}
+#templates-tab:checked ~ .tabs__scroller .tabs__scroller-component_templates {
+  color: var(--black);
+}
+
+
+/* Можно ли использовать псевдо классы? */
+/* #all-tab:checked ~ .tabs__scroller .tabs__scroller-component_all::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: var(--black);
+}
+
+#elements-tab:checked
+  ~ .tabs__scroller
+  .tabs__scroller-component_elements::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: var(--black);
+}
+
+#containers-tab:checked
+  ~ .tabs__scroller
+  .tabs__scroller-component_containers::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: var(--black);
+}
+
+#templates-tab:checked
+  ~ .tabs__scroller
+  .tabs__scroller-component_templates::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: var(--black);
+} */

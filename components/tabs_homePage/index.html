@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="tabs.css" />
+    <title>Document</title>
+  </head>
+  <body
+    style="display: grid; grid-template-rows: 150px 1fr 200px; height: 100vh"
+  >
+    <header
+      class="header"
+      style="height: 100%px; background-color: azure"
+    ></header>
+    <section class="main" style="position: relative">
+      <div class="container">
+        <div class="tabs">
+          <input
+            class="tabs__input"
+            type="radio"
+            name="components"
+            id="all-tab"
+            checked
+          />
+          <input
+            class="tabs__input"
+            type="radio"
+            name="components"
+            id="elements-tab"
+          />
+          <input
+            class="tabs__input"
+            type="radio"
+            name="components"
+            id="containers-tab"
+          />
+          <input
+            class="tabs__input"
+            type="radio"
+            name="components"
+            id="templates-tab"
+          />
+
+          <!-- <input class="tabs__input" type="radio" name="components" id="#all-tab" checked />
+          <input class="tabs__input" type="radio" name="components" id="#elements-tab" />
+          <input class="tabs__input" type="radio" name="components" id="#containers-tab" />
+          <input class="tabs__input" type="radio" name="components" id="#templates-tab" /> -->
+
+          <div class="tabs__scroller">
+            <label
+              class="tabs__scroller-component tabs__scroller-component_all"
+              for="all-tab"
+              >All components
+              <span class="tabs__line"></span></label
+            >
+            <label
+              class="tabs__scroller-component tabs__scroller-component_elements"
+              for="elements-tab"
+              >Elements
+              <span class="tabs__line"></span></label
+            >
+            <label
+              class="tabs__scroller-component tabs__scroller-component_containers"
+              for="containers-tab"
+              >Containers
+              <span class="tabs__line"></span></label
+            >
+            <label
+              class="tabs__scroller-component tabs__scroller-component_templates"
+              for="templates-tab"
+              >Templates
+              <span class="tabs__line"></span></label
+            >
+          </div>
+
+          <div class="tabs__content tabs__content_all">
+            <h3>tabs__content_all</h3>
+          </div>
+          <div class="tabs__content tabs__content_elements">
+            <h3>tabs__content_elements</h3>
+          </div>
+          <div class="tabs__content tabs__content_containers">
+            <h3>tabs__content_containers</h3>
+          </div>
+          <div class="tabs__content tabs__content_templates">
+            <h3>tabs__content_templates</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="footer"
+      style="height: 100%; background-color: green"
+    ></footer>
+  </body>
+</html>
