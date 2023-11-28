@@ -1,7 +1,9 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
+
 @import '../../03-lection1/01-button/button.css';
+
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -25,10 +27,30 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --df: flex;
+    --fz20: 20px;
+    --fz16: 16px;
+    --fm:  Inter;
+   --norm: normal;
+   --sb: space-between;
+    
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+body {
+   
+}
+
+p{
+    margin: 0;
 }
 
 .accordion {
@@ -37,8 +59,16 @@
    
   }
 
+  .histogram {
+    --testWidth: 400px;
+}
+
+
   .container {
     max-width: 1110px;
     margin: auto;
     padding: 0 10px;
+    background-color: var(--grey-3);
 }
+
+
