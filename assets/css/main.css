@@ -4,9 +4,9 @@
 @import '../../components/body/body.css';
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
-@import '../../components/cards/cards.css)';
+@import '../../components/cards/cards.css';
 @import '../../components/card/card.css';
-@import '../../components/container/container__body.css';
+@import '../../components/container/body-wrapper.css';
 
 
 @import '../../03-lection1/02-accordion/accordion.css';
@@ -41,6 +41,17 @@ body,html {
 }
 
 
+.accordion {
+    max-width: 1110px;
+    margin: auto;
+   
+  }
+
+  .container {
+    max-width: 1110px;
+    margin: auto;
+    padding: 0 10px;
+}
 
 @media screen  and (max-width: 1200px) {
     .container {
@@ -64,15 +75,4 @@ body,html {
     }
 }
 
-.accordion {
-    max-width: 1110px;
-    margin: auto;
-   
-  }
-
-  .container {
-    max-width: 1110px;
-    margin: auto;
-    padding: 0 10px;
-}
 

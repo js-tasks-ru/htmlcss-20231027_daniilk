@@ -1,14 +1,16 @@
 .header {
-    background-color: #FFF;
-    color: black
+    background-color: var(--white);
+    color: var(--black);
+    padding-top: 25px;
 }
 
 .header__menu {
    
-    max-height: 34px;
+   
     margin: auto;
     flex-shrink: 0;
-    padding: 24px 165px 38px 165px;
+    /* padding: 24px 165px 38px 165px; */
+    margin-bottom: 40px; /* или элементы хедера через флекс сделать? */
 }
 
 .header__title {
@@ -17,7 +19,7 @@ font-size: 50px;
 font-style: normal;
 font-weight: 500;
 line-height: 64px;
-
+margin-bottom: 40px;
 }
 
 .header__nav {
@@ -27,7 +29,7 @@ line-height: 64px;
 
 }
 
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
     .header__title {
         padding-left: 10px;
         line-height: 38px;
@@ -47,4 +49,4 @@ line-height: 64px;
     .header__menu {
         padding: 10px;
     }
-}
+} */
