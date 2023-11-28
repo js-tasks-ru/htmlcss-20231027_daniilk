@@ -1,7 +1,10 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
+
+
 @import '../../03-lection1/01-button/button.css';
+
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -31,14 +34,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+.container {
+    max-width: 1110px;
+    margin: auto;
+    padding:0 10px;
+}
+
+.calendar {
+    --color-text: #334D6E;
+    --color-days: #90A0B7;
+    --color-back-b:#4263EB ;
+    --color-back-i:#A0B1F5;
+}
+
+
 .accordion {
     max-width: 1110px;
     margin: auto;
-   
   }
-
-  .container {
-    max-width: 1110px;
-    margin: auto;
-    padding: 0 10px;
-}
