@@ -1,7 +1,18 @@
 @import '../fonts/fonts.css';
+
 @import 'normalize.css';
 
+@import '../../components/body/body.css';
+@import '../../components/header/header.css';
+@import '../../components/footer/footer.css';
+@import '../../components/cards/cards.css';
+@import '../../components/card/card.css';
+@import '../../components/container/wrapper.css';
+
+
+
 @import '../../03-lection1/01-button/button.css';
+
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -31,6 +42,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+body,html {
+    height: 100%;
+}
+
+
 .accordion {
     max-width: 1110px;
     margin: auto;
@@ -42,3 +59,27 @@
     margin: auto;
     padding: 0 10px;
 }
+
+@media screen  and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+        margin: auto;
+        
+    }
+}
+
+@media screen  and (max-width: 950px) {
+    .container {
+        max-width: 750px;
+        margin: auto;
+    }
+}
+
+@media screen  and (max-width: 750px) {
+    .container {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+

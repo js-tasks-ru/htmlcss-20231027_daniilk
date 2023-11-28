@@ -1,0 +1,17 @@
+.card {
+    background-color: var(--blue);
+    flex-basis: 350px;
+    height: 367px;
+    /*можно ли сделать так, чтобы при наличии свободного места
+    высота также растягивалась? */
+    /* max-height: 367px; */  
+    flex-shrink: 1;
+    /* flex-grow: 1; */
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        max-width: 350px;
+        max-width: 350px;
+    }
+}
