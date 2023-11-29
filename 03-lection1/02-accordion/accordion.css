@@ -1,5 +1,11 @@
 /* Стилизация аккордеона */
 
+.accordion {
+  max-width: 1110px;
+  margin: auto;
+ 
+}
+
 .accordion__summary::marker {
   content: none;
   /* position: absolute;
