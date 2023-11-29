@@ -11,9 +11,7 @@
   .background-img {
     height: 500px; /* для теста */
     background: url('./public/forest_768.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+ 
   }
 }
 
@@ -21,9 +19,7 @@
   .background-img {
     height: 700px; /* для теста */
     background: url('./public/forest_1024.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
   }
 }
 
@@ -31,8 +27,6 @@
   .background-img {
     height: 1000px; /* для теста */
     background: url('./public/forest_2560.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+ 
   }
 }
