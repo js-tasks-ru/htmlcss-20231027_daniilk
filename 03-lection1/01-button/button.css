@@ -24,7 +24,7 @@
 
 .button_primary {
   background-color: var(--blue);
-
+  border-color:var(--primary);
   color: var(--white);
 }
 
@@ -35,6 +35,9 @@
 .button_secondary {
   background-color: var(--purple);
   color: var(--white);
+  border-color: var(--secondary);
+  
+
 }
 .button_secondary:hover {
   background-color: var(--secondary-hover);
