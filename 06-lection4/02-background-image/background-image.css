@@ -1,0 +1,32 @@
+.background-img {
+  border: 1px solid red;
+  height: 250px; /* для теста */
+  background: url('./public/forest_400.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 400px) {
+  .background-img {
+    height: 500px; /* для теста */
+    background: url('./public/forest_768.jpg');
+ 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background-img {
+    height: 700px; /* для теста */
+    background: url('./public/forest_1024.jpg');
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .background-img {
+    height: 1000px; /* для теста */
+    background: url('./public/forest_2560.jpg');
+ 
+  }
+}
