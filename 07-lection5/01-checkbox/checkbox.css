@@ -83,6 +83,15 @@ display: block;
   display: none;
 }
 
+/* или так лучше реализовать? */
+.checkbox__input:disabled ~ .chexkbox__state .checkbox__control_disabled {
+  background-color: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .chexkbox__state  .checkbox__lable_disabled {
+  color: var(--grey-2);
+}
+
 .checkbox__input_default:focus ~ .chexkbox__state .checkbox__lable {
   text-decoration: underline;
 }
