@@ -1,0 +1,97 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.checkbox__control {
+  /* background-color: var(--blue); */
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  border: 1px solid var(--grey-2);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.checkbox__control_disabled {
+  background-color: var(--grey-2);
+}
+.checkbox__svg_disabled {
+  display: none;
+}
+
+.checkbox__input_default {
+  display: none;
+}
+
+.checkbox__input_disabled {
+  display: none;
+}
+
+.checkbox__lable {
+ 
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.checkbox__lable_default {
+  color: var(--grey-4);
+}
+
+.checkbox__lable_checked {
+  color: var(--grey-4);
+}
+
+.checkbox__lable_disabled {
+  color: var(--grey-2);
+}
+.chexkbox__state {
+display: flex;
+gap: 12px;
+align-items: center;
+cursor: pointer;
+}
+
+.checkbox__svg {
+  width: 15px;
+  height: 13px;
+}
+
+
+.checkbox__lable_default {
+  display: block;
+}
+
+.checkbox__lable_checked {
+  display: none;
+}
+
+.checkbox__input_default:checked ~ .chexkbox__state .checkbox__control_default {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.checkbox__input_default:checked ~ .chexkbox__state .checkbox__lable_checked {
+display: block;
+}
+.checkbox__input_default:checked ~ .chexkbox__state .checkbox__lable_default {
+  display: none;
+}
+
+/* или так лучше реализовать? */
+.checkbox__input:disabled ~ .chexkbox__state .checkbox__control_disabled {
+  background-color: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .chexkbox__state  .checkbox__lable_disabled {
+  color: var(--grey-2);
+}
+
+.checkbox__input_default:focus ~ .chexkbox__state .checkbox__lable {
+  text-decoration: underline;
+}
