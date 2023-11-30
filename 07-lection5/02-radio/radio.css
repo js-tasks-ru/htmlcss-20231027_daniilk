@@ -1,0 +1,129 @@
+.radio__input {
+  display: none;
+}
+
+.labels-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+}
+
+.radio {
+  cursor: pointer;
+}
+
+.radio_disabled {
+  cursor:not-allowed;
+}
+
+.radio__state {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.radio__title {
+  color: var(--grey-4);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+
+.radio__title_checked {
+  display:none;
+}
+
+.radio__title_disabled {
+  color: var(--grey-2);
+  display: none;
+}
+
+.radio__control {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+}
+
+.radio__control_default{
+  border: 1px solid black;
+  /* display: none; */
+}
+
+
+.radio__control_active {
+  border: 2px solid var(--blue);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio__control_disabled {
+  display: none;
+  background-color: var(--grey-2);
+}
+
+.radio__control_default {
+  border-color: var(--grey-2);
+}
+
+.radio__control-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 14px;
+  background-color: var(--blue);
+}
+
+.radio__input_different-one:checked ~  .radio__state_one .radio__control_active {
+  display: flex;
+}
+
+.radio__input_different-one:checked ~  .radio__state_one .radio__title_checked {
+  display: block;
+}
+
+.radio__input_different-one:checked ~  .radio__state_one .radio__title_default {
+  display: none;
+}
+
+
+
+.radio__input_different-one:checked ~  .radio__state_one .radio__control_default {
+  display: none;
+}
+
+
+
+.radio__input_different-two:checked ~  .radio__state_two .radio__control_active {
+  display: flex;
+}
+
+.radio__input_different-two:checked ~  .radio__state_two .radio__title_checked {
+  display: block;
+}
+
+.radio__input_different-two:checked ~  .radio__state_two .radio__title_default {
+  display: none;
+}
+
+.radio__input_different-two:checked ~  .radio__state_two .radio__control_default {
+  display: none;
+}
+
+.radio__input:disabled ~  .radio__state_three .radio__control_default, .radio__control_active {
+  display: none;
+}
+
+.radio__input:disabled ~  .radio__state_three .radio__control_disabled {
+  display: block;
+}
+
+.radio__input:disabled ~  .radio__state_three .radio__title_default,.radio__title_checked {
+  display: none;
+}
+
+.radio__input:disabled ~  .radio__state_three .radio__title_disabled {
+  display: block;
+}
