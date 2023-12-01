@@ -39,6 +39,16 @@
     <symbol id="accordion-close">
       <path d="M17 9L9 1L1 9" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+
+    <symbol id="toggle-off" viewBox="0 0 52 28" fill="none">
+      <rect x="0.5" y="0.5" width="51" height="27" rx="13.5" fill="white" stroke="#DDE2E5"/>
+      <rect x="2" y="2" width="24" height="24" rx="12" fill="#DDE2E5"/>
+     </symbol >
+
+     <symbol  id="toggle-on"  viewBox="0 0 52 28" fill="none">
+      <rect x="0.5" y="0.5" width="51" height="27" rx="13.5" fill="#4263EB" stroke="#4263EB"/>
+      <rect x="26" y="2" width="24" height="24" rx="12" fill="white"/>
+    </symbol>
   </defs>
 </svg>
 
