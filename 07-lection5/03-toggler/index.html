@@ -6,6 +6,56 @@
         <link rel="stylesheet" href="./toggler.css">
     </head>
     <body>
+        <label class="toggle">
+            <input type="checkbox" class="toggle__input toggle__input_active">
+            <div class="toggle__state">
+                <div class="toggle__status toggle__status_off">
+                    <svg class="toggle__icon">
+                        <use xlink:href="../../assets/icons/sprite.svg#toggle-off""></use>
+                    </svg>
+                </div>
+                <div class="toggle__status toggle__status_on">
+                    <svg class="toggle__icon">
+                        <use xlink:href="../../assets/icons/sprite.svg#toggle-on""></use>
+                    </svg>
+                </div>
 
+                <div class="toggle__status toggle__status_disabled">
+                    <div class="toggle__icon">
+                        <div class="toggle__slider"></div>
+                    </div>
+                </div>
+
+                <div class="toggle__title toggle__title_off">Off</div>
+                <div class="toggle__title toggle__title_on">On</div>
+                <div class="toggle__title toggle__title_disabled">Disabled</div>
+            </div>
+        </label>
+
+        <label class="toggle">
+            <input type="checkbox" class="toggle__input toggle__input_disabled" disabled>
+            <div class="toggle__state">
+                <div class="toggle__status toggle__status_off">
+                    <svg class="toggle__icon">
+                        <use xlink:href="../../assets/icons/sprite.svg#toggle-off""></use>
+                    </svg>
+                </div>
+                <div class="toggle__status toggle__status_on">
+                    <svg class="toggle__icon">
+                        <use xlink:href="../../assets/icons/sprite.svg#toggle-on""></use>
+                    </svg>
+                </div>
+
+                <div class="toggle__status toggle__status_disabled">
+                    <div class="toggle__icon">
+                        <div class="toggle__slider"></div>
+                    </div>
+                </div>
+
+                <div class="toggle__title toggle__title_off">Off</div>
+                <div class="toggle__title toggle__title_on">On</div>
+                <div class="toggle__title toggle__title_disabled">Disabled</div>
+            </div>
+        </label>
     </body>
 </html>

@@ -1,0 +1,98 @@
+.toggle {
+  cursor: pointer;
+}
+
+.toggle__input {
+  /* display: none; */
+  position: absolute; /* можно так скрывать?*/
+  top: -100vh;
+}
+.toggle__icon {
+  width: 52px;
+  height: 28px;
+}
+
+.toggle__state {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.toggle__title {
+  color: var(--grey-4);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.toggle__title_off {
+  display: block;
+}
+
+.toggle__title_on {
+  display: none;
+}
+
+.toggle__title_disabled {
+  display: none;
+}
+
+.toggle__status_on {
+  display: none;
+}
+
+.toggle__status_disabled {
+  border-radius: 16px;
+  background: var(--grey-2);
+  display: none;
+  position: relative;
+}
+
+.toggle__slider {
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  opacity: 0.25;
+  background: var(--Gray-3, #acb5bd);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.toggle__input_active:checked ~ .toggle__state .toggle__status_on {
+  display: block;
+}
+
+.toggle__input_active:checked ~ .toggle__state .toggle__status_off {
+  display: none;
+}
+
+.toggle__input_active:checked ~ .toggle__state .toggle__title_on {
+  display: block;
+}
+
+.toggle__input_active:checked ~ .toggle__state .toggle__title_off {
+  display: none;
+}
+
+.toggle__input_active:focus ~ .toggle__state .toggle__title {
+  text-decoration: underline;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title_off,.toggle__title_on {
+  display: none;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title_disabled {
+  display: block;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__status_off,.toggle__status_on {
+  display: none;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__status_disabled {
+  display: block;
+}
